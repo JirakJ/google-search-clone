@@ -114,6 +114,8 @@ button {
           }
         }
 
+        .fa-th,
+        .fa-camera,
         .fa-search,
         .fa-microphone {
           position: absolute;
@@ -122,18 +124,38 @@ button {
           color: $btn_color;
         }
 
-        .fa-search {
+        .fa-search-left {
+          margin-top: -8px;
           left: 25px;
         }
 
-        .fa-microphone {
+        .fa-search-right {
+          margin-top: -8px;
           right: 25px;
+        }
+
+        .fa-th {
+          margin-top: -8px;
+          right: 25px;
+        }
+
+        .fa-camera {
+          margin-top: -8px;
+          right: 100px;
+        }
+
+        .fa-microphone {
+          margin-top: -8px;
+          right: 75px;
         }
       }
     }
 
     .buttons {
-      padding-top: 18px;
+
+      with-top-padding {
+        padding-top: 18px;
+      }
 
       button {
         border-radius: 4px;
@@ -191,7 +213,7 @@ button {
     }
 
     hr {
-      color: #f1f1f13a;
+      color: rgba(185, 199, 206, 0.78);
     }
 
     .footer-down {
