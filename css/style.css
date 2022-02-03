@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.54);
+  outline: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+i,
+img,
+button {
+  cursor: pointer;
+}
+
+table {
+  margin: 15px 45px;
+}
+table tr {
+  font-size: 10pt;
+}
+
+.left {
+  position: relative;
+  left: 0px;
+}
+
+.right {
+  position: relative;
+  right: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.google {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.google .google-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.google .google-header a {
+  color: rgba(0, 0, 0, 0.871);
+  font-size: 13px;
+  margin-right: 15px;
+  line-height: 24px;
+}
+.google .google-header a:hover {
+  opacity: 0.85;
+}
+.google .google-header i,
+.google .google-header img {
+  vertical-align: middle;
+}
+.google .google-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -100px;
+}
+.google .google-body img {
+  width: 272px;
+  height: 92px;
+  display: block;
+}
+.google .google-body form {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.google .google-body form .main {
+  width: 584px;
+}
+.google .google-body form .advanced {
+  width: 1168px;
+}
+.google .google-body form .searchbar-xl {
+  width: 100%;
+  vertical-align: middle;
+}
+.google .google-body form .searchbar-s {
+  width: 45%;
+  vertical-align: middle;
+}
+.google .google-body form .search {
+  width: 100%;
+  position: relative;
+}
+.google .google-body form .search input {
+  width: 100%;
+  padding: 0.8em 3em;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid #e6e5e5;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.871);
+  font-size: 16px;
+  word-wrap: break-word;
+}
+.google .google-body form .search input:hover {
+  box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
+}
+.google .google-body form .search .fa-th,
+.google .google-body form .search .fa-camera,
+.google .google-body form .search .fa-search,
+.google .google-body form .search .fa-microphone {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.54);
+}
+.google .google-body form .search .fa-search-left {
+  left: 25px;
+}
+.google .google-body form .search .fa-search-left-images {
+  margin-top: -8px;
+  left: 25px;
+}
+.google .google-body form .search .fa-search-right {
+  margin-top: -8px;
+  right: 25px;
+}
+.google .google-body form .search .fa-search-main-right {
+  margin-top: -8px;
+  right: 25px;
+}
+.google .google-body form .search .fa-search-main-left {
+  right: 25px;
+}
+.google .google-body form .search .fa-th {
+  margin-top: -8px;
+  right: 25px;
+}
+.google .google-body form .search .fa-camera {
+  margin-top: -8px;
+  right: 75px;
+}
+.google .google-body form .search .fa-microphone {
+  right: 75px;
+}
+.google .google-body form .search .fa-microphone-images {
+  margin-top: -8px;
+  right: 55px;
+}
+.google .google-body form .search .fa-microphone-main-right {
+  right: 25px;
+}
+.google .google-body .buttons .searchbutton {
+  float: right;
+}
+.google .google-body .buttons button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0 16px;
+  margin: 11px 4px;
+  min-width: 54px;
+  height: 36px;
+  outline: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+}
+.google .google-body .buttons button:hover {
+  color: rgba(0, 0, 0, 0.871);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  opacity: 0.85;
+  border-color: #c6c6c6;
+}
+.google .google-body .languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: small;
+  margin: -10px 0 20px 0;
+  line-height: 28px;
+}
+.google .google-body .languages .language-type a {
+  color: #1a2bca;
+  padding: 0 5px;
+}
+.google .google-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-transform: capitalize;
+}
+.google .google-footer a {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 27px;
+}
+.google .google-footer hr {
+  color: rgba(185, 199, 206, 0.78);
+}
+.google .google-footer .footer-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.google .google-footer .footer-down .footer-down-right {
+  padding-right: 27px;
+}
+
+@media screen and (max-width: 600px) {
+  .google-body form {
+    max-width: 450px;
+  }
+}
+/* Google chrome */
+@-webkit-keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
