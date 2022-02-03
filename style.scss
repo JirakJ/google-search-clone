@@ -46,6 +46,29 @@ button {
   cursor: pointer;
 }
 
+table {
+  margin: 15px 45px;
+  tr {
+    font-size: 10pt;
+  }
+}
+
+.left {
+  position: relative;
+  left: 0px;
+}
+
+.right {
+  position: relative;
+  right: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .google {
   height: 100vh;
   @include displayCenter(center);
@@ -87,7 +110,23 @@ button {
     }
 
     form {
-      width: 584px;
+      .main {
+        width: 584px;
+      }
+
+      .advanced {
+        width: 1168px;
+      }
+
+      .searchbar-xl {
+        width: 100%;
+        vertical-align: middle;
+      }
+
+      .searchbar-s {
+        width: 45%;
+        vertical-align: middle;
+      }
       margin: 25px;
       @include displayCenter(center);
       flex-direction: column;
@@ -125,12 +164,25 @@ button {
         }
 
         .fa-search-left {
+          left: 25px;
+        }
+
+        .fa-search-left-images {
           margin-top: -8px;
           left: 25px;
         }
 
         .fa-search-right {
           margin-top: -8px;
+          right: 25px;
+        }
+
+        .fa-search-main-right {
+          margin-top: -8px;
+          right: 25px;
+        }
+
+        .fa-search-main-left {
           right: 25px;
         }
 
@@ -141,20 +193,28 @@ button {
 
         .fa-camera {
           margin-top: -8px;
-          right: 100px;
+          right: 75px;
         }
 
         .fa-microphone {
-          margin-top: -8px;
           right: 75px;
+        }
+
+        .fa-microphone-images {
+          margin-top: -8px;
+          right: 55px;
+        }
+
+        .fa-microphone-main-right {
+          right: 25px;
         }
       }
     }
 
     .buttons {
 
-      with-top-padding {
-        padding-top: 18px;
+      .searchbutton {
+        float: right;
       }
 
       button {
@@ -230,7 +290,7 @@ button {
 @media screen and (max-width: 600px) {
   .google-body {
     form {
-      max-width: 350px;
+      max-width: 450px;
     }
   }
 }
